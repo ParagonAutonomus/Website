@@ -6,59 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADD - Contact</title>
     <link rel="icon" type="images/x-icon" href="images\logo.webp">
-    <style>
-        header {
-            background-color: #007acc; 
-            color: #fff;
-            padding: 1em;
-        }
-        header a{
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0 10px;
-            font-weight: bold;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .navbar {
-            background-color: #005580;
-            color: #ffffff;
-            padding: 1em;
-        }
-        .navbar a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 0 10px;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            text-align:center;
-        }
-        footer {
-            background-color: #007acc;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <h1><a href="home.html">Autonomous Delivery Drones</a></h1>
     </header>
-    <nav class="navbar">
-        <a href="about.html">About Us</a>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">About Us
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Meet The Team</a>
+              <a href="#">Our Stakeholders</a>
+              <a href="#">Our Goals</a>
+            </div>
+          </div> 
+          <div class="dropdown">
+            <button class="dropbtn">About Us
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Meet The Team</a>
+              <a href="#">Our Stakeholders</a>
+              <a href="#">Our Goals</a>
+            </div>
+          </div> 
         <a href="contact.html">Contact</a>
-    </nav>
+    </div>
 
     <section id="contact">
         <h2>Contact</h2>
