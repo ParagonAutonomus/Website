@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADD - About Us</title>
+    <title>ADD - Meet the Team</title>
     <link rel="icon" type="images/x-icon" href="images\logo.webp">
     <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+  .img__wrap 
+  {
+  position: relative;
+  display: inline-block;
+  margin: 4rem;
+  }
+  .img__img{
+    transition: opacity .5s, visibility .2s;
+    width: auto;
+    height: 55vh;
+  }
+  .img__description 
+  {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #000000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .2s;
+  padding: 0 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  .img__wrap:hover .img__description 
+  {
+  visibility: visible;
+  opacity: 1;
+  }
+  .img__wrap:hover .img__img
+  {
+  visibility: visible;
+  opacity: 0.3;
+  }
+
+</style>
 <body>
     <header>
         <h1><a href="home.html">Autonomous Delivery Drones</a></h1>
@@ -14,17 +52,14 @@
     <nav class="navbar">
         <div class="dropdown">
             <button class="dropbtn">About Us
-              <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-              <a href="about.html">Meet The Team</a>.
-              <a href="#">Our Stakeholders</a>
-              <a href="#">Our Goals</a>
+              <a href="meet-team.html">Meet The Team</a>.
+              <a href="stakeholder.html">Our Stakeholders</a>
             </div>
           </div> 
           <div class="dropdown">
             <button class="dropbtn">Progress
-              <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
               <a href="#">Software</a>
@@ -34,11 +69,24 @@
         <a href="contact.html">Contact</a>
     </div>
     </nav>
-    <section id="member">
-        <h2>Team Lead</h2>
-        <p>Welcome to Autonomous Delivery Drones! We are a group dedicated to revolutionizing the way deliveries are made
-            using cutting-edge drone technology. Our mission is to make deliveries faster, more efficient, and
-            eco-friendly.</p>
+    <section id="team-images">
+      <div class="img__wrap">
+      <img class="img__img" src="images/hardwareteam.png">
+      <div class="img__description">
+        <h1>Hardware Team</h1>
+        <p>The hardware team plays a crucial role in designing, building, and testing the physical components of the drones. This team is responsible for selecting and integrating various hardware elements such as motors, sensors, and cameras, which are essential for the drone's operation. They work closely with software teams to ensure that the hardware can properly execute flight control algorithms, navigation, object detection, and collision avoidance systems. Additionally, the team conducts rigorous testing to ensure durability, reliability, and safety in varied environmental conditions. Their ultimate goal is to create efficient, robust, and safe drones capable of performing autonomous deliveries effectively.</p>
+        </div>
+      </div>
+      <div class="img__wrap">
+        <img class="img__img" src="images/softwareteam.png">
+        <div class="img__description">
+          <h1>Software Team</h1>
+          <p>The software team is essential for crafting and refining the algorithms that govern the drone’s navigation and operational behaviors. This team develops the drone's "brain," which includes systems for flight control, route planning, communications, and autonomous decision-making. They ensure precise real-time data integration from sensors and cameras, crucial for environmental sensing and obstacle avoidance. Cybersecurity is also a key responsibility, safeguarding the communication links between drones and control systems against potential threats. Collaboration with the hardware team is vital to ensure that the software performs optimally on the specified hardware. Through rigorous testing, the software team ensures reliability and safety in all operational conditions, aiming to enable the drones to autonomously, efficiently, and safely complete delivery tasks.</p>
+          </div>
+        </div>
+    </section>
+    <section id="team-core-values">
+      <h1>At the heart of our work, we value teamwork and creativity as we make drones for fire safety. Our hardware and software teams work together, sharing ideas and skills to make the best drones possible. The hardware team picks the best parts and puts them together, making sure everything works perfectly. Meanwhile, the software team writes clever programs to control the drones and keep them safe. We test our drones a lot to make sure they work well and keep improving them. Our goal is simple: to make drones that keep people and places safe from fires.<br><br></h1>
     </section>
     <footer>
         &copy; 2024 Autonomous Delivery Drones. All rights reserved.
