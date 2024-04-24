@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD - Meet the Team</title>
+  <link rel="icon" type="images/x-icon" href="images\logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .img__wrap {
+    position: relative;
+    display: inline-block;
+    margin: 4rem;
+  }
+
+  .img__img {
+    transition: opacity .5s, visibility .2s;
+    width: auto;
+    height: 55vh;
+  }
+
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .2s;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .img__wrap:hover .img__img {
+    visibility: visible;
+    opacity: 0.3;
+  }
+</style>
+
+<body>
+  <header>
+    <h1><a href="home.html">Autonomous Delivery Drones</a></h1>
+  </header>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">About Us
+      </button>
+      <div class="dropdown-content">
+        <a href="meet-team.html">Meet The Team</a>.
+        <a href="stakeholder.html">Our Stakeholders</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Progress
+      </button>
+      <div class="dropdown-content">
+        <a href="software-progress.html">Software</a>
+        <a href="hardware-progress.html">Hardware</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <section id="title">
+    <h1><br>Software Progress</h1>
+  </section>
+  <section id="progress">
+
+    <h1>
+      Stage 1
+    </h1>
+    <img src="./images/dji-tello.webp">
+    <p>
+      Research and learn more about DJI TelloPy drone control library. 
+    </p>
+    DJITelloPy:
+    <a target="_blank" href="https://github.com/damiafuentes/DJITelloPy">
+      https://github.com/damiafuentes/DJITelloPy
+    </a>
+
+    <h1>
+      Stage 2
+    </h1>
+    <img src="./images/pygame-logo.png">
+
+    <p>
+      Used PyGame and cv2 python libraries to implement navigation on the drone as a prooof of concept.
+    </p>
+    CV2:
+    <a target="_blank" href="https://github.com/opencv/opencv">
+      https://github.com/opencv/opencv
+    </a>
+    <br>
+    PyGame:
+    <a target="_blank" href="https://github.com/pygame/pygame">
+      https://github.com/pygame/pygame
+    </a>
+    <br>
+    <br>
+    <br>
+
+  </section>
+  <footer>
+    &copy; 2024 Autonomous Delivery Drones. All rights reserved.
+  </footer>
+</body>

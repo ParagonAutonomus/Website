@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADD - Meet the Team</title>
+  <link rel="icon" type="images/x-icon" href="images\logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .img__wrap {
+    position: relative;
+    display: inline-block;
+    margin: 4rem;
+  }
+
+  .img__img {
+    transition: opacity .5s, visibility .2s;
+    width: auto;
+    height: 55vh;
+  }
+
+  .img__description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #000000;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .2s;
+    padding: 0 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .img__wrap:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .img__wrap:hover .img__img {
+    visibility: visible;
+    opacity: 0.3;
+  }
+</style>
+
+<body>
+  <header>
+    <h1><a href="home.html">Autonomous Delivery Drones</a></h1>
+  </header>
+  <nav class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">About Us
+      </button>
+      <div class="dropdown-content">
+        <a href="meet-team.html">Meet The Team</a>.
+        <a href="stakeholder.html">Our Stakeholders</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Progress
+      </button>
+      <div class="dropdown-content">
+        <a href="software-progress.html">Software</a>
+        <a href="hardware-progress.html">Hardware</a>
+      </div>
+    </div>
+    <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <section id="title">
+    <h1><br>Hardware Progress</h1>
+  </section>
+  <section id="progress">
+    <img src="./images/hw-progress-1.png">
+
+    <h1>
+      2/5/2024
+    </h1> <img src="./images/hw-progress-2.png">
+
+    <h1>
+      2/9/2024
+    </h1> <img src="./images/hw-progress-3.png">
+
+    <h1>
+      2/16/2024
+    </h1> <img src="./images/hw-progress-4.png">
+
+    <h1>
+      2/17/2024
+    </h1>
+  </section>
+  <section id="team-core-values">
+    <h1>The hardware team has run lots of tests using simulators to get the most optimized build for a drone that can withstand fires while carrying sufficient payload.<br><br></h1>
+  </section>
+  <footer>
+    &copy; 2024 Autonomous Delivery Drones. All rights reserved.
+  </footer>
+</body>
