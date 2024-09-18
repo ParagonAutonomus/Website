@@ -70,96 +70,84 @@
     <title>Paragon Autonomous</title>
     <link rel="icon" type="images/x-icon" href="images\logo.png">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
-    <header>
-        <h1><a href="home.html">Paragon Autonomous</a></h1>
-    </header>
-
-    <div class="navbar">
+  <div>
+  <div class="navbar">
+    <a class="title" style="font-size: 30px; float: left;"  href="home.html">Paragon Autonomous</a>
+    <a href="contact.html">Contact Us</a>
+      <div class="dropdown">
+          <button class="dropbtn">About Us
+          </button>
+          <div class="dropdown-content">
+            <a href="meet-team.html">Meet The Team</a>
+            <a href="stakeholder.html">Our Stakeholders</a>
+          </div>
+        </div> 
         <div class="dropdown">
-            <button class="dropbtn">About Us
-            </button>
-            <div class="dropdown-content">
-              <a href="meet-team.html">Meet The Team</a>.
-              <a href="stakeholder.html">Our Stakeholders</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">Progress
-            </button>
-            <div class="dropdown-content">
-              <a href="software-progress.html">Software</a>
-              <a href="hardware-progress.html">Hardware</a>
-            </div>
-          </div> 
-        <a href="contact.html">Contact</a>
-    </div>
-    <div>
-    <section id="about">
-        <h2>Welcome to Autonomous Delivery Drones!</h2>
-        <p>We are a group dedicated to revolutionizing the way deliveries are made
-            using cutting-edge drone technology. Our mission is to make deliveries faster, more efficient, and
-            eco-friendly.</p>
-    </section>
-    
-    <section id="services">
-        <div class="slideshow-container">
+          <button class="dropbtn">Progress
+          </button>
+          <div class="dropdown-content">
+            <a href="software-progress.html">Software</a>
+            <a href="hardware-progress.html">Hardware</a>
+          </div>
+        </div> 
+  </div>
+  <footer>
+    &copy; 2024 Paragon Autonomous. All rights reserved.
+</footer>
+  </div>
 
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="img_nature_wide.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="img_snow_wide.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="img_mountains_wide.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-        <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 3000);
-            }
-            </script>
+    <section id="title-sec" style="padding: 50px; margin: 0; background-color: #eacfb3;">
+      <h1 style="font-size: 60px; text-align: center; margin: 0;">Paragon Autonomous</h1>
+      <h2 style="font-size: 30px; text-align: center; color: #5e5656; margin:0; margin-bottom: 20px;">Autonomous Fire-preventing drones</h2>
+      <div style="text-align: center;">
+          <a href="contact.html" class="button" style="text-decoration: none; color: white; padding: 10px 20px; font-size: 16px; margin: 30px; border-radius: 8px; background-color: #000000;">Contact Us</a>
+      </div>
+      <div class="slideshow-container" style="padding: 30px;">
+
+        <div class="mySlides fade">
+          <img src="images\hw-progress-1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images\softwareteam.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="images\hardwareteam.png" style="width:100%">
+        </div>
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        </div>
+        <br>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000);
+        }
+        </script>
     </section>
-    </div>
-    
-    <footer>
-        &copy; 2024 Autonomous Delivery Drones. All rights reserved.
-    </footer>
 </body>
 
 </html>
