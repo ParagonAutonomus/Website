@@ -72,15 +72,21 @@ header a{
 }
 section {
     position: relative;
-    margin: 20px;
+    margin: auto;
     text-align: center;
-
+    background-color: #eacfb3;
 }
 footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
+<<<<<<< Updated upstream
     bottom: 0;
     width: 100%;
     position: fixed;
+=======
+    width: 100%;
+    height: auto;
+    position: absolute;
+>>>>>>> Stashed changes
 }

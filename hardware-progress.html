@@ -9,7 +9,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-  .img__wrap {
+  .timeline {
+            position: relative;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #0d6efd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding: 2em 1em;
+        }
+        .timeline-item .image {
+    text-align: center;
+    margin-bottom: 10px; /* Adjust this value for more or less space between the image and text */
+}
+
+.timeline-item img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 10px; /* This padding ensures the image sits right above the text */
+}
+
+
+        .timeline-item-left {
+            left: 0;
+            text-align: right;
+        }
+        .timeline-item-right {
+            left: 50%;
+        }
+        .timeline-item-right::before {
+            left: auto;
+            right: -12.5px;
+        }
+        .img__wrap {
     position: relative;
     display: inline-block;
     margin: 4rem;
@@ -19,30 +60,6 @@
     transition: opacity .5s, visibility .2s;
     width: auto;
     height: 55vh;
-  }
-
-  .img__description {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: #000000;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .5s, visibility .2s;
-    padding: 0 20px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .img__wrap:hover .img__description {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .img__wrap:hover .img__img {
-    visibility: visible;
-    opacity: 0.3;
   }
 </style>
 
@@ -67,6 +84,7 @@
         <a href="hardware-progress.html">Hardware</a>
       </div>
     </div>
+<<<<<<< Updated upstream
     <a href="contact.html">Contact</a>
     </div>
   </nav>
@@ -75,11 +93,21 @@
   </section>
   <section id="progress">
     <img src="./images/hw-progress-1.png">
+=======
+  <section id="timeline">
+  <div class="container py-5"></div>
+    <h1 class="text-center">New Hire Timeline</h1>
+>>>>>>> Stashed changes
 
-    <h1>
-      2/5/2024
-    </h1> <img src="./images/hw-progress-2.png">
+    <div class="timeline">
+        <div class="timeline-item timeline-item-left">
+            <h4 class="text-primary">DATE: TBD</h4>
+            <div class="image"><img src="images/hw-progress-1.png" width="500"></div>
+            <h5>A</h5>
+            <p>SOme text</p>
+        </div>
 
+<<<<<<< Updated upstream
     <h1>
       2/9/2024
     </h1> <img src="./images/hw-progress-3.png">
@@ -98,4 +126,7 @@
   <footer>
     &copy; 2024 Paragon Autonomous. All rights reserved.
   </footer>
+=======
+      </section>
+>>>>>>> Stashed changes
 </body>
