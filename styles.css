@@ -1,11 +1,33 @@
+/* Ensure the body takes up the full height of the viewport */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #eacfb3;
 }
 
+/* Wrapper to ensure footer is at the bottom */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    margin-bottom: -150px;
+}
+
+/* Content section */
+section {
+    position: relative;
+    text-align: center;
+    background-color: #eacfb3;
+    flex: 1; /* Expands to push footer to the bottom */
+}
+
+/* Navbar styles */
 .navbar {
     background-color: #ffffff;
     overflow: hidden;
@@ -14,6 +36,8 @@ body {
     margin: 0; 
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* Other navbar and dropdown styles (unchanged) */
 .navbar a {
     text-decoration: none;
     float: right;
@@ -25,10 +49,12 @@ body {
     line-height: 75px;
     display: block; 
 }
+
 .dropdown {
     float: right;
     overflow: hidden;
 }
+
 .dropdown .dropbtn {
     font-size: 18px;  
     border: none;
@@ -41,12 +67,15 @@ body {
     line-height: 75px;
     display: block;
 }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #ffdaa9;
 }
-.navbar .title:hover{
+
+.navbar .title:hover {
     background-color: #ffffff;
-  }
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -55,6 +84,7 @@ body {
     box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
     z-index: 1;
 }
+
 .dropdown-content a {
     float: none;
     color: black;
@@ -62,23 +92,23 @@ body {
     display: block;
     text-align: center;
 }
+
 .dropdown-content a:hover {
     background-color: #ffdaa9;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
-section {
-    position: relative;
-    margin: auto;
-    text-align: center;
-    background-color: #eacfb3;
-}
+
+/* Footer styles */
 footer {
     background-color: #000000;
     color: #fff;
     text-align: center;
     width: 100%;
-    bottom: 0;
-    position: absolute;
+    height: 80px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
 }

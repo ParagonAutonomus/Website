@@ -5,123 +5,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Progress - Hardware</title>
-  <link rel="icon" type="images/x-icon" href="images\logo.png">
+  <link rel="icon" type="images/x-icon" href="images/logo.png">
   <link rel="stylesheet" href="styles.css">
+  
+  <style>
+.timeline {
+  width: 100%; /* Full width */
+  padding: 2em 0;
+}
+
+/* Timeline item styles */
+.timeline-item {
+  width: 80%; /* Constrain content */
+  margin: 1.5em auto; /* Centered horizontally */
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 12px;
+  background-color: #4CAF50;
+  border-radius: 50%;
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #4CAF50;
+}
+
+.timeline-date {
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 0.5em;
+  width: 20%;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 1em;
+}
+
+.timeline-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-date {
+    width: 100%;
+    text-align: left;
+  }
+
+  .timeline-content {
+    width: 100%;
+  }
+}
+  </style>
 </head>
-<style>
-  .timeline {
-            position: relative;
-        }
-        .timeline:before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            background-color: #0d6efd;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .timeline-item {
-            position: relative;
-            width: 50%;
-            padding: 2em 1em;
-        }
-        .timeline-item .image {
-    text-align: center;
-    margin-bottom: 10px; /* Adjust this value for more or less space between the image and text */
-}
-
-.timeline-item img {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 10px; /* This padding ensures the image sits right above the text */
-}
-
-
-        .timeline-item-left {
-            left: 0;
-            text-align: right;
-        }
-        .timeline-item-right {
-            left: 50%;
-        }
-        .timeline-item-right::before {
-            left: auto;
-            right: -12.5px;
-        }
-        .img__wrap {
-    position: relative;
-    display: inline-block;
-    margin: 4rem;
-  }
-
-  .img__img {
-    transition: opacity .5s, visibility .2s;
-    width: auto;
-    height: 55vh;
-  }
-</style>
 
 <body>
-  <div>
-    <div class="navbar">
-      <a class="title" style="font-size: 30px; float: left;"  href="home.html">Paragon Autonomous</a>
-      <a href="contact.html">Contact Us</a>
-        <div class="dropdown">
-            <button class="dropbtn">About Us
-            </button>
-            <div class="dropdown-content">
-              <a href="meet-team.html">Meet The Team</a>
-              <a href="stakeholder.html">Our Stakeholders</a>
-            </div>
-          </div> 
-          <div class="dropdown">
-            <button class="dropbtn">Progress
-            </button>
-            <div class="dropdown-content">
-              <a href="software-progress.html">Software</a>
-              <a href="hardware-progress.html">Hardware</a>
-            </div>
-          </div> 
-    </div>
-      <footer>
-      &copy; 2024 Paragon Autonomous. All rights reserved.
-  </footer>
-    </div>
-  <section id="title">
-    <h1><br>Hardware Progress</h1>
-  </section>
-  <section id="progress">
-    <img src="./images/hw-progress-1.png">
-=======
-  <section id="timeline">
-  <div class="container py-5"></div>
-    <h1 class="text-center">New Hire Timeline</h1>
->>>>>>> Stashed changes
-
-    <div class="timeline">
-        <div class="timeline-item timeline-item-left">
-            <h4 class="text-primary">DATE: TBD</h4>
-            <div class="image"><img src="images/hw-progress-1.png" width="500"></div>
-            <h5>A</h5>
-            <p>SOme text</p>
-        </div>
-
-<<<<<<< Updated upstream
-    <h1>
-      2/9/2024
-    </h1> <img src="./images/hw-progress-3.png">
-
-    <h1>
-      2/16/2024
-    </h1> <img src="./images/hw-progress-4.png">
-
-    <h1>
-      2/17/2024
-    </h1>
-  </section>
-  <section id="team-core-values">
-    <h1>The hardware team has run lots of tests using simulators to get the most optimized build for a drone that can withstand fires while carrying sufficient payload.<br><br></h1>
-  </section>
+      <div>
+        
+            <div>
+              <div>
+                <div class="navbar">
+                  <a class="title" style="font-size: 30px; float: left;"  href="home.html">Paragon Autonomous</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="impact.html">Impact</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">About Us</button>
+                        <div class="dropdown-content">
+                          <a href="meet-team.html">Meet The Team</a>
+                          <a href="stakeholder.html">Our Stakeholders</a>
+                        </div>
+                      </div> 
+                      <div class="dropdown">
+                        <button class="dropbtn">Progress
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="software-progress.html">Software</a>
+                          <a href="hardware-progress.html">Hardware</a>
+                        </div>
+                      </div> 
+                </div>
+              </div>
+              <div class="wrapper">
+              <section class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-date">Phase 1: Concept & Planning</div>
+                  <div class="timeline-content">
+                    <h3>Project Initialization</h3>
+                    <p>Defined project goals, constraints, and use cases. Assigned team roles.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-date">Phase 2: Hardware Selection</div>
+                  <div class="timeline-content">
+                    <h3>Choosing Components</h3>
+                    <p>Selected flight controller, motors, sensors, and batteries.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-date">Phase 3: Software Development</div>
+                  <div class="timeline-content">
+                    <h3>Flight Algorithms</h3>
+                    <p>Developed navigation and obstacle-avoidance algorithms in Python/C++.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-date">Phase 4: Prototyping & Testing</div>
+                  <div class="timeline-content">
+                    <h3>Test Flight</h3>
+                    <p>Conducted initial flights to verify stability and communication systems.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-item">
+                  <div class="timeline-date">Phase 5: Final Integration</div>
+                  <div class="timeline-content">
+                    <h3>Full System Integration</h3>
+                    <p>Integrated software and hardware components. Prepared for demonstration.</p>
+                  </div>
+                </div>
+        </section>
+            <footer>
+          &copy; 2024 Paragon Autonomous. All rights reserved.
+      </footer>
+  </div>
 </body>
+
+</html>
