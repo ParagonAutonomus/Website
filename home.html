@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paragon Autonomous</title>
-    <link rel="icon" type="images/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
         #title-sec {
-            /* Set up the animation for background images */
             background-size: cover;
             background-position: center;
-            padding: 50px 0;
+            padding: 60px 0;
             text-align: center;
+            height: 100vh;
             color: #333;
             animation: slideBackground 15s infinite;
+            display:flex;
+            position: relative;
+            justify-content: center; 
+            align-items: center;
+        }
+        h1 {
+            font-size: 5rem; 
+            color: #b84139;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
         }
 
-
-        /* Keyframes for slideshow effect */
+        h2 {
+            font-size: 3rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
         @keyframes slideBackground {
             0% {
                 background-image: url('images/hw-progress-1.png');
@@ -38,37 +45,57 @@
                 background-image: url('images/hw-progress-1.png');
             }
         }
+
     </style>
 </head>
 
 <body>
-       <div class="navbar">
-        <a class="title" style="font-size: 30px; float: left;" href="home.html">Paragon Autonomous</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="impact.html">Impact</a>
-        <div class="dropdown">
-            <button class="dropbtn">About Us</button>
-            <div class="dropdown-content">
-                <a href="meet-team.html">Meet The Team</a>
-                <a href="stakeholder.html">Our Stakeholders</a>
-            </div>
-        </div> 
-        <div class="dropdown">
-            <button class="dropbtn">Progress</button>
-            <div class="dropdown-content">
-                <a href="software-progress.html">Software</a>
-                <a href="hardware-progress.html">Hardware</a>
-            </div>
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html" style="font-size: 30px;">Paragon Autonomous</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="impact.html">Impact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="meet-team.html">Meet The Team</a>
+                        <a class="dropdown-item" href="stakeholder.html">Our Stakeholders</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProgress" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progress
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownProgress">
+                        <a class="dropdown-item" href="software-progress.html">Software</a>
+                        <a class="dropdown-item" href="hardware-progress.html">Hardware</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </div>
-
     <section id="title-sec">
-        <h1>Paragon Autonomous</h1>
-        <h2>Autonomous Fire-preventing drones</h2>
+        <div>
+            <h1>Paragon Autonomous</h1>
+            <h2>Autonomous Fire-preventing Drones</h2>
+        </div>
     </section>
-
+    <footer>
+        &copy; 2024 Paragon Autonomous. All rights reserved.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-<footer>
-    &copy; 2024 Paragon Autonomous. All rights reserved.
-</footer>
 </html>
