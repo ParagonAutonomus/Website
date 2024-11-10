@@ -1,6 +1,6 @@
 /* Ensure the body takes up the full height of the viewport */
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Copperplate, "Copperplate Gothic Light";
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-color: #eacfb3;
+    background-color: #fff;
 }
 
 /* Wrapper to ensure footer is at the bottom */
@@ -21,10 +21,13 @@ body {
 
 /* Content section */
 section {
-    position: relative;
+    font-size: 30px;
     text-align: center;
-    background-color: #eacfb3;
-    flex: 1; /* Expands to push footer to the bottom */
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex:1;
 }
 
 /* Navbar styles */
@@ -34,7 +37,7 @@ section {
     border-style: solid;
     border-color: #898989;
     margin: 0; 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Copperplate, "Copperplate Gothic Light";
 }
 
 /* Other navbar and dropdown styles (unchanged) */
@@ -45,7 +48,7 @@ section {
     color: #000000;
     font-weight: bold;
     text-align: center;
-    padding: 0 60px;
+    padding: 0 20px;
     line-height: 75px;
     display: block; 
 }
@@ -63,13 +66,13 @@ section {
     background-color: inherit;
     font-family: inherit;
     font-weight: bold;
-    padding: 0 70px;
+    padding: 0 20px;
     line-height: 75px;
     display: block;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #ffdaa9;
+    background-color: #e3e3e3;
 }
 
 .navbar .title:hover {
@@ -94,7 +97,7 @@ section {
 }
 
 .dropdown-content a:hover {
-    background-color: #ffdaa9;
+    background-color: #e3e3e3;
 }
 
 .dropdown:hover .dropdown-content {

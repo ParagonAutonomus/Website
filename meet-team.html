@@ -22,28 +22,10 @@
   .img__description 
   {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #000000;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .2s;
   padding: 0 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Copperplate, "Copperplate Gothic Light";
+  font-size: 20px;
   }
-  .img__wrap:hover .img__description 
-  {
-  visibility: visible;
-  opacity: 1;
-  }
-  .img__wrap:hover .img__img
-  {
-  visibility: visible;
-  opacity: 0.3;
-  }
-
 </style>
 <body style="overflow-x: hidden;">
   <div>
@@ -70,23 +52,25 @@
     </div>
 
     </div>
-    <section id="team-images">
-      <h1 style="margin: 0;"><br>MEET THE TEAM</h1>
-      <div class="img__wrap">
+    <section id="title"><h1 style="text-align: center;"><br>MEET THE TEAM</h1></section>
+    <section id="hardware-team">
+      <div class="img__wrap" style="float: left; width: 50%;">
       <img class="img__img" src="images/hardwareteam.png">
-      <div class="img__description">
+      
+      </div>
+      <div class="img__description"style="text-align: right; margin-left: 50%;">
         <h1>Hardware Team</h1>
         <p>The hardware team plays a crucial role in designing, building, and testing the physical components of the drones. This team is responsible for selecting and integrating various hardware elements such as motors, sensors, and cameras, which are essential for the drone's operation. They work closely with software teams to ensure that the hardware can properly execute flight control algorithms, navigation, object detection, and collision avoidance systems. Additionally, the team conducts rigorous testing to ensure durability, reliability, and safety in varied environmental conditions. Their ultimate goal is to create efficient, robust, and safe drones capable of performing autonomous deliveries effectively.</p>
         </div>
+    </section>
+    <section id="software-team">
+      <div class="img__wrap" style="float: right; margin: 50%;">
+      <img class="img__img" src="images/softwareteam.png">
       </div>
-      <div class="img__wrap">
-        <img class="img__img" src="images/softwareteam.png">
-        <div class="img__description">
-          <h1>Software Team</h1>
-          <p>The software team is essential for crafting and refining the algorithms that govern the drone’s navigation and operational behaviors. This team develops the drone's "brain," which includes systems for flight control, route planning, communications, and autonomous decision-making. They ensure precise real-time data integration from sensors and cameras, crucial for environmental sensing and obstacle avoidance. Cybersecurity is also a key responsibility, safeguarding the communication links between drones and control systems against potential threats. Collaboration with the hardware team is vital to ensure that the software performs optimally on the specified hardware. Through rigorous testing, the software team ensures reliability and safety in all operational conditions, aiming to enable the drones to autonomously, efficiently, and safely complete delivery tasks.</p>
-          </div>
+      <div class="img__description" style="text-align: left; max-width: 50%;">
+        <h1>Software Team</h1>
+        <p>The software team is essential for crafting and refining the algorithms that govern the drone’s navigation and operational behaviors. This team develops the drone's "brain," which includes systems for flight control, route planning, communications, and autonomous decision-making. They ensure precise real-time data integration from sensors and cameras, crucial for environmental sensing and obstacle avoidance. Cybersecurity is also a key responsibility, safeguarding the communication links between drones and control systems against potential threats. Collaboration with the hardware team is vital to ensure that the software performs optimally on the specified hardware. Through rigorous testing, the software team ensures reliability and safety in all operational conditions, aiming to enable the drones to autonomously, efficiently, and safely complete delivery tasks.</p>
         </div>
-        <h1 style="padding-right: 10vh; padding-left: 10vh; ">At the heart of our work, we value teamwork and creativity as we make drones for fire safety. Our hardware and software teams work together, sharing ideas and skills to make the best drones possible. The hardware team picks the best parts and puts them together, making sure everything works perfectly. Meanwhile, the software team writes clever programs to control the drones and keep them safe. We test our drones a lot to make sure they work well and keep improving them. Our goal is simple: to make drones that keep people and places safe from fires.<br><br></h1>
     </section>
      <footer>
       &copy; 2024 Paragon Autonomous. All rights reserved.
