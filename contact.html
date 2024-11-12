@@ -17,108 +17,129 @@
       });
     })();
     </script>
-    <script src="email.js"> </script>
+    <script src="email.js"></script>
 
     <style>
-  input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #d5d5d5;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  input[type=submit]:hover {
-    background-color: black;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  .container {
-    border-radius: 5px;
-    background-color: #A7A1A1;
-    padding: 25px;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
-  }
+        /* Input and Submit Button Styles */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d5d5d5;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #333;
+        }
+
+        /* Container Styles */
+        .container {
+            border-radius: 10px;
+            background-color: #A7A1A1;
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        /* Centering Text */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 15px;
+                margin: 10px;
+            }
+            input[type=submit] {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+        }
     </style>
 </head>
 
 <body style="overflow-x: hidden;">
-  <div class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="home.html" style="font-size: 30px;">Paragon Autonomous</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="impact.html">Impact</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    About Us
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="meet-team.html">Meet The Team</a>
-                    <a class="dropdown-item" href="stakeholder.html">Our Stakeholders</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProgress" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Progress
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownProgress">
-                    <a class="dropdown-item" href="software-progress.html">Software</a>
-                    <a class="dropdown-item" href="hardware-progress.html">Hardware</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html" style="font-size: 30px;">Paragon Autonomous</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="impact.html">Impact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="meet-team.html">Meet The Team</a>
+                        <a class="dropdown-item" href="stakeholder.html">Our Stakeholders</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProgress" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Progress
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownProgress">
+                        <a class="dropdown-item" href="software-progress.html">Software</a>
+                        <a class="dropdown-item" href="hardware-progress.html">Hardware</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Wrapper -->
+    <div class="wrapper" style="margin-bottom: 5px;">
+        <h1>Contact Us</h1>
+        <div class="container">
+            <form onsubmit="sendEmail()">
+                <label>Full Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                
+                <label>Email</label>
+                <input type="text" id="mail" name="lastname" placeholder="Your Email..">
+                
+                <label>Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height: 150px"></textarea>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-</div>
-<div class="wrapper" style="margin-bottom: 5px;">
-    <h1 style="text-align: center;"><br>Contact Us</h1>
-    <div class="container">
-      <form onsubmit="sendEmail()">
-        <label>Full Name</label>
-        <input type="text" id="fname" name="fullname" placeholder="Your name..">
 
-        <label>Email</label>
-        <input type="text" id="mail" name="lastname" placeholder="Your Email..">
+    <!-- Footer -->
+    <footer class="text-center mt-4 p-3">
+        &copy; 2024 Paragon Autonomous. All rights reserved.
+    </footer>
 
-        <label>Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height: 150px"></textarea>
-
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer_contents">&copy; 2024 Paragon Autonomous. All rights reserved.</div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
