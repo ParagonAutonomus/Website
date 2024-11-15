@@ -9,87 +9,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-        .stakeholder {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            text-align: center;
-        }
         img {
-            width: 150px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 1px;
+            width: 40vh;
         }
+    h3, h1{
+font-weight: bold;
+    }
 </style>
 <body>
-    <div>
-        <div class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="home.html" style="font-size: 30px;">Paragon Autonomous</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="impact.html">Impact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            About Us
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="meet-team.html">Meet The Team</a>
-                            <a class="dropdown-item" href="stakeholder.html">Our Stakeholders</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProgress" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Progress
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownProgress">
-                            <a class="dropdown-item" href="software-progress.html">Software</a>
-                            <a class="dropdown-item" href="hardware-progress.html">Hardware</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="home.html" style="font-size: 30px;">Paragon Autonomous</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="meet-team.html">Meet The Team</a>
+                        <a class="dropdown-item" href="what-we-do.html">What We Do</a>
+                    </div>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="impact.html">Impact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        </div>
+        <section class="hero container my-5">
+            <div class="row align-items-center">
+                <!-- Image Section -->
+                <div class="col-12 col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
+                    <div class="drone-image">
+                        <img src="what-we-do-images/drone-schematic.png" alt="drone schematic" class="img-fluid" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                
+                <!-- Text Section -->
+                <div class="col-12 col-md-6">
+                    <p class="description" style="font-size: x-large; line-height: 1.6;">
+                        Paragon Autonomous is a venture dedicated to mitigating the increase in frequency and destruction of wildfires. Our solution is twofold: an autonomous scouting drone built to detect fires in real-time and a payload drone to drop fire retardant and assist first responders.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        </div>
-    <div class="stakeholder">
-        <h2>First Responders</h2>
-        <p>First responders are our stakeholders because our autonomous fire prevention drones can provide them with valuable support in their mission to protect lives, property, and the environment from the dangers of wildfires, helping them to respond more effectively and safely to emergency situations.</p>
-        <img src="images/firstresponders.jpg" alt="First Responders">
-    </div>
-
-    <div class="stakeholder">
-        <h2>Victims of Natural Disasters</h2>
-        <p>Victims of natural disasters are our stakeholders because our autonomous fire prevention drones offer proactive measures to mitigate the impact of wildfires, potentially reducing the devastation and loss experienced by communities affected by such disasters.</p>
-        <img src="images\victims.jpg" alt="Victims of Natural Disasters">
-    </div>
-
-    <div class="stakeholder">
-        <h2>State Governments</h2>
-        <p>State governments are our stakeholders because our autonomous fire prevention drones can significantly enhance their capacity for safeguarding communities and natural resources from the threat of wildfires.</p>
-        <img src="images\stategov.png" alt="State Governments">
-    </div>
-
-    <div class="stakeholder">
-        <h2>Arizona State University</h2>
-        <p>
-            Arizona State University is our stakeholder because our autonomous fire prevention drones can offer innovative solutions that align with the university's commitment to research, technology, and community engagement, potentially contributing to advancements in wildfire prevention and management while also providing valuable educational and research opportunities for students and faculty.</p>
-        <img src="images\asu.png" alt="Arizona State University">
-    </div>
+        </section>
+        
+    
+        <section class="services text-center">
+            <div class="container">
+                <h1 style="padding-bottom: 50px;">Our Services</h1>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h3>Proactive Monitoring</h3>
+                        <p style="font-size: x-large;">In Arizona, detection of deadly wildfire often rely on people call-ins. Paragon Autonomous’s drones will actively scout for wildfires using advanced thermal imaging and computer vision technology.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Firefighting Aid</h3>
+                        <p style="font-size: x-large;">Paragon Autonomous’s payload drone will be equipped with up to 10 pounds of fire retardant to assist with small fires before emergency assistance arrives.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <h3>Aerial Assistance and Imaging</h3>
+                        <p style="font-size: x-large;">Our scouting drone acts as eyes in the sky with thermal imaging and camera technology, allowing first responders to assess the scene in real-time before they arrive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
             <footer>
             &copy; 2024 Paragon Autonomous. All rights reserved.
         </footer>
